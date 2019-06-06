@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie/assets.dart';
 import 'package:movie/ui/lee_app_bar.dart';
 import 'package:movie/ui/lee_bottom_bar.dart';
+import 'package:movie/message_localization.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage();
@@ -92,6 +93,9 @@ class _BottomTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final messages = MessageIntl.of(context);
+
     return Align(
       alignment: Alignment.bottomCenter,
       child: LeeBottomBar(
@@ -99,17 +103,17 @@ class _BottomTabs extends StatelessWidget {
         onTap: onTap,
         items: [
           BottomNavigationBarItem(
-            title: Text('1'),
+            title: Text(messages.nowInTheaters),
             icon: const Icon(Icons.theaters),
             backgroundColor: Theme.of(context).primaryColor,
           ),
           BottomNavigationBarItem(
-            title: Text('2'),
+            title: Text(messages.showtimes),
             icon: const Icon(Icons.schedule),
             backgroundColor: Theme.of(context).primaryColor,
           ),
           BottomNavigationBarItem(
-            title: Text('3'),
+            title: Text(messages.comingSoon),
             icon: const Icon(Icons.whatshot),
             backgroundColor: Theme.of(context).primaryColor,
           ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie/ui/main_page.dart';
+import 'package:movie/message_localization.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(LeeApp());
@@ -29,6 +31,16 @@ class _LeeAppState extends State<LeeApp> {
         scaffoldBackgroundColor: Colors.transparent,
       ),
       home: const MainPage(),
+      supportedLocales: [
+        const Locale('en', ''),
+        const Locale('fi', ''),
+        const Locale('zh', ''),
+      ],
+      localizationsDelegates: [
+        const LEELocalizationDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
     );
   }
 }
