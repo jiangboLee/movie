@@ -1,0 +1,55 @@
+// DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
+// This is a library that provides messages for a zh locale. All the
+// messages from the main program should be duplicated here with the same
+// function name.
+
+// ignore_for_file: unnecessary_brace_in_string_interps
+
+import 'package:intl/intl.dart';
+import 'package:intl/message_lookup_by_library.dart';
+
+// ignore: unnecessary_new
+final messages = new MessageLookup();
+
+// ignore: unused_element
+final _keepAnalysisHappy = Intl.defaultLocale;
+
+// ignore: non_constant_identifier_names
+typedef MessageIfAbsent(String message_str, List args);
+
+class MessageLookup extends MessageLookupByLibrary {
+  get localeName => 'zh';
+
+  final messages = _notInlinedMessages(_notInlinedMessages);
+  static _notInlinedMessages(_) => <String, Function> {
+    "about" : MessageLookupByLibrary.simpleMessage("About"),
+    "aboutInKino" : MessageLookupByLibrary.simpleMessage("About inKino"),
+    "aboutInKinoDescription" : MessageLookupByLibrary.simpleMessage("inKino is the unofficial Finnkino client that is minimalistic, fast, and delightful to use."),
+    "allEmpty" : MessageLookupByLibrary.simpleMessage("All empty!"),
+    "appDevelopedWith" : MessageLookupByLibrary.simpleMessage("The app was developed with"),
+    "appName" : MessageLookupByLibrary.simpleMessage("LEE"),
+    "at" : MessageLookupByLibrary.simpleMessage("at"),
+    "cast" : MessageLookupByLibrary.simpleMessage("Cast"),
+    "checkoutRepo" : MessageLookupByLibrary.simpleMessage("and it\'s open source; check out the source code yourself from"),
+    "collapseStoryline" : MessageLookupByLibrary.simpleMessage("touch to collapse"),
+    "comingSoon" : MessageLookupByLibrary.simpleMessage("马上上映"),
+    "director" : MessageLookupByLibrary.simpleMessage("Director"),
+    "errorLoadingEvents" : MessageLookupByLibrary.simpleMessage("Error loading events."),
+    "expandStoryline" : MessageLookupByLibrary.simpleMessage("touch to expand"),
+    "gallery" : MessageLookupByLibrary.simpleMessage("Gallery"),
+    "githubRepo" : MessageLookupByLibrary.simpleMessage("the GitHub repo"),
+    "gotIt" : MessageLookupByLibrary.simpleMessage("Okay, got it!"),
+    "loadingMoviesError" : MessageLookupByLibrary.simpleMessage("There was an error while\nloading movies."),
+    "noMovies" : MessageLookupByLibrary.simpleMessage("Didn\'t find any movies at\nall."),
+    "noMoviesForToday" : MessageLookupByLibrary.simpleMessage("Didn\'t find any movies\nabout to start for today. ¯\\_(ツ)_/¯"),
+    "nowInTheaters" : MessageLookupByLibrary.simpleMessage("上映中"),
+    "oops" : MessageLookupByLibrary.simpleMessage("Oops!"),
+    "releaseDate" : MessageLookupByLibrary.simpleMessage("Release date"),
+    "searchHint" : MessageLookupByLibrary.simpleMessage("Search movies & showtimes..."),
+    "showtimes" : MessageLookupByLibrary.simpleMessage("时间表"),
+    "storyline" : MessageLookupByLibrary.simpleMessage("Storyline"),
+    "tickets" : MessageLookupByLibrary.simpleMessage("Tickets"),
+    "tmdbAttribution" : MessageLookupByLibrary.simpleMessage("This product uses the TMDb API but is not endorsed or certified by TMDb."),
+    "tryAgain" : MessageLookupByLibrary.simpleMessage("TRY AGAIN")
+  };
+}
