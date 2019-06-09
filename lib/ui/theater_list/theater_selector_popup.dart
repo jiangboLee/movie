@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie/ui/theater_list/theater_list.dart';
 
 class TheaterSelectorPopup extends PopupRoute {
 
@@ -22,10 +23,12 @@ class TheaterSelectorPopup extends PopupRoute {
 
   @override
   Widget buildPage(BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
-    // TODO: implement buildPage
+
     return Container(
       color: const Color(0xFF152451),
-      child: null,
+      child: TheaterList(onTheaterTapped: () {
+        return Navigator.pop(context);
+      }),
     );
   }
 

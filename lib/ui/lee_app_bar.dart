@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:movie/assets.dart';
 import 'theater_list/theater_selector_popup.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:core/core.dart';
 
 class LeeAppBar extends StatefulWidget {
   @override
@@ -132,7 +134,18 @@ class _Title extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final subTitle = Text('xxxxx');
+    final subTitle = StoreConnector<AppState, Theater>(
+      builder: (BuildContext context, Theater theater) {
+        return Text(
+          theater?.name ?? '',
+          style: const TextStyle(
+            fontSize: 12.0,
+            color: Colors.white70,
+          ),
+        );
+      },
+      converter: (store) => store.state.theaterState.currentTheater,
+    );
 
     final title = Column(
       mainAxisAlignment: MainAxisAlignment.center,

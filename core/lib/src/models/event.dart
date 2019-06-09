@@ -1,0 +1,6 @@
+
+
+enum EventListPage {
+  nowInTheaters,
+  comeingSoon,
+}
